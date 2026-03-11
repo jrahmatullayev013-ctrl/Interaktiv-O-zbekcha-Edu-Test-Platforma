@@ -1,12 +1,12 @@
 [
   {
-    "savol": "x² + 5x + 6 = 0 tenglamaning ildizlari qaysi?",
-    "variantlar": ["x = -2 va x = -3", "x = 2 va x = 3", "x = -1 va x = -6", "x = 1 va x = 6"],
-    "togri": "x = -2 va x = -3"
-  },
-  {
     "savol": "√225 ning qiymati?",
     "variantlar": ["10", "12", "15", "20"],
     "togri": "15"
+  },
+  {
+    "savol": "x² = 49 bo‘lsa, x ning qiymati?",
+    "variantlar": ["±7", "7", "-7", "-49"],
+    "togri": "±7"
   }
 ]
