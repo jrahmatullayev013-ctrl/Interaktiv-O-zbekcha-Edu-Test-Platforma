@@ -1,5 +1,6 @@
 let ball = 0;
 let savollar = [];
+let javoblar = [];
 
 // Savollarni JSON fayldan yuklash
 fetch("questions.json")
@@ -21,7 +22,12 @@ function chiqar() {
       const btn = document.createElement("button");
       btn.innerText = v;
       btn.onclick = () => {
-        if (v === s.togri) ball++;
+        if (v === s.togri) {
+          ball++;
+          javoblar.push({savol: s.savol, tanlangan: v, togri: s.togri, status: "✅ To‘g‘ri"});
+        } else {
+          javoblar.push({savol: s.savol, tanlangan: v, togri: s.togri, status: "❌ Xato"});
+        }
         Array.from(div.querySelectorAll("button")).forEach(b => b.disabled = true);
       };
       div.appendChild(btn);
@@ -34,5 +40,10 @@ function chiqar() {
 document.getElementById("finishBtn").onclick = () => {
   const natijaDiv = document.getElementById("natija");
   natijaDiv.style.display = "block";
-  natijaDiv.innerText = `Test tugadi! To‘g‘ri javoblar: ${ball} / ${savollar.length}`;
-};
+
+  // Progress bar
+  let foiz = Math.round((ball / savollar.length) * 100);
+  natijaDiv.innerHTML = `
+    <p>Test tugadi! To‘g‘ri javoblar: ${ball} / ${savollar.length} (${foiz}%)</p>
+    <div style="width:100%;background:#ddd;border-radius:8px;">
+      <div style="width:${foiz}%;background:#4caf50;color:white;padding:5px;border-radius:8px;">
