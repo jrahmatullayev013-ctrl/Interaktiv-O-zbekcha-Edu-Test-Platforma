@@ -5,8 +5,8 @@
     "togri": "x = -2 va x = -3"
   },
   {
-    "savol": "Bir do‘kon 20% chegirma qildi. 500 000 so‘mlik tovar necha so‘m bo‘ladi?",
-    "variantlar": ["400 000", "450 000", "480 000", "420 000"],
-    "togri": "400 000"
+    "savol": "√225 ning qiymati?",
+    "variantlar": ["10", "12", "15", "20"],
+    "togri": "15"
   }
 ]
