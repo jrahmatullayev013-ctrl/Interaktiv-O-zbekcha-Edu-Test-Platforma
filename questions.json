@@ -1,0 +1,52 @@
+[
+  {
+    "savol": "x² + 5x + 6 = 0 tenglamaning ildizlari qaysi?",
+    "variantlar": ["x = -2 va x = -3", "x = 2 va x = 3", "x = -1 va x = -6", "x = 1 va x = 6"],
+    "togri": "x = -2 va x = -3"
+  },
+  {
+    "savol": "Bir do‘kon 20% chegirma qildi. 500 000 so‘mlik tovar necha so‘m bo‘ladi?",
+    "variantlar": ["400 000", "450 000", "480 000", "420 000"],
+    "togri": "400 000"
+  },
+  {
+    "savol": "Kasrni soddalashtiring: 36/48",
+    "variantlar": ["3/4", "2/3", "4/5", "5/6"],
+    "togri": "3/4"
+  },
+  {
+    "savol": "Bir kvadratning perimetri 24 sm. Uning tomoni necha sm?",
+    "variantlar": ["4", "6", "8", "12"],
+    "togri": "6"
+  },
+  {
+    "savol": "√225 ning qiymati?",
+    "variantlar": ["10", "12", "15", "20"],
+    "togri": "15"
+  },
+  {
+    "savol": "x² = 49 bo‘lsa, x ning qiymati?",
+    "variantlar": ["±7", "7", "-7", "49"],
+    "togri": "±7"
+  },
+  {
+    "savol": "Bir uchburchakning burchaklari yig‘indisi necha daraja?",
+    "variantlar": ["90°", "180°", "270°", "360°"],
+    "togri": "180°"
+  },
+  {
+    "savol": "Bir sonning 30% i 60 ga teng. Son necha?",
+    "variantlar": ["100", "150", "200", "180"],
+    "togri": "200"
+  },
+  {
+    "savol": "x/5 = 7 bo‘lsa, x = ?",
+    "variantlar": ["35", "25", "12", "30"],
+    "togri": "35"
+  },
+  {
+    "savol": "Bir to‘g‘ri to‘rtburchakning uzunligi 12 sm, eni 5 sm. Uning yuzasi?",
+    "variantlar": ["60", "17", "30", "20"],
+    "togri": "60"
+  }
+]
