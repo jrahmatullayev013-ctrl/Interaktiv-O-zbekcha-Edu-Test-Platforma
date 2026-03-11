@@ -3,20 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Edu-Test Platforma</title>
-  <link rel="stylesheet" href="style.css"> <!-- Dizayn fayli -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Interaktiv O‘zbekcha Edu-Test Platforma</h1>
-  
-  <!-- Savollar chiqadigan joy -->
+
+  <!-- Fan tanlash -->
+  <div id="kategoriya">
+    <label>Fan tanlang:</label>
+    <select id="fanSelect">
+      <option value="matematika">Matematika</option>
+      <option value="tarix">Tarix</option>
+      <option value="ingliz">Ingliz tili</option>
+    </select>
+    <button id="startBtn">Boshlash</button>
+  </div>
+
+  <!-- Timer -->
+  <div id="timer"></div>
+
+  <!-- Savollar -->
   <div id="test"></div>
-  
+
   <!-- Tugatish tugmasi -->
-  <button id="finishBtn">Testni tugatish</button>
-  
-  <!-- Natija ko‘rinadigan joy -->
+  <button id="finishBtn" style="display:none;">Testni tugatish</button>
+
+  <!-- Natija -->
   <div id="natija"></div>
-  
-  <script src="script.js"></script> <!-- JavaScript fayli -->
+
+  <script src="script.js"></script>
 </body>
 </html>
