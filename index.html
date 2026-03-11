@@ -2,35 +2,24 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
-  <title>Edu-Test Platforma</title>
+  <title>Topqir.uz uslubidagi platforma</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Interaktiv O‘zbekcha Edu-Test Platforma</h1>
-
-  <!-- Fan tanlash -->
-  <div id="kategoriya">
-    <label>Fan tanlang:</label>
-    <select id="fanSelect">
-      <option value="matematika">Matematika</option>
-      <option value="tarix">Tarix</option>
-      <option value="ingliz">Ingliz tili</option>
-    </select>
-    <button id="startBtn">Boshlash</button>
+  <h1>Edu-Test Platforma — O‘yinlar menyusi</h1>
+  <div class="menu">
+    <div class="tile" onclick="location.href='matematika.html'">
+      📐 Matematika Testi
+    </div>
+    <div class="tile" onclick="location.href='tarix.html'">
+      📜 Tarix Testi
+    </div>
+    <div class="tile" onclick="location.href='soz.html'">
+      🔤 So‘z Topish
+    </div>
+    <div class="tile" onclick="location.href='poyga.html'">
+      🏁 Poyga O‘yini
+    </div>
   </div>
-
-  <!-- Timer -->
-  <div id="timer"></div>
-
-  <!-- Savollar -->
-  <div id="test"></div>
-
-  <!-- Tugatish tugmasi -->
-  <button id="finishBtn" style="display:none;">Testni tugatish</button>
-
-  <!-- Natija -->
-  <div id="natija"></div>
-
-  <script src="script.js"></script>
 </body>
 </html>
