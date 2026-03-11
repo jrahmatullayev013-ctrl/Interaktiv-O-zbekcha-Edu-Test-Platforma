@@ -16,15 +16,16 @@ function chiqar() {
     const div = document.createElement("div");
     div.className = "savol";
     div.innerHTML = `<p>${i+1}-savol: ${s.savol}</p>`;
-    s.variantlar.forEach(v => {
+    
+    for (let harf in s.variantlar) {
       const btn = document.createElement("button");
-      btn.innerText = v;
+      btn.innerText = `${harf}) ${s.variantlar[harf]}`;
       btn.onclick = () => {
-        if (v === s.togri) ball++;
+        if (harf === s.togri) ball++;
         Array.from(div.querySelectorAll("button")).forEach(b => b.disabled = true);
       };
       div.appendChild(btn);
-    });
+    }
     testDiv.appendChild(div);
   });
 }
