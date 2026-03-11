@@ -1,8 +1,7 @@
 let ball = 0;
 let savollar = [];
-let javoblar = [];
 
-// Matematika savollarini yuklash
+// Savollarni yuklash
 fetch("questions.json")
   .then(res => res.json())
   .then(data => {
@@ -21,12 +20,7 @@ function chiqar() {
       const btn = document.createElement("button");
       btn.innerText = v;
       btn.onclick = () => {
-        if (v === s.togri) {
-          ball++;
-          javoblar.push({savol: s.savol, tanlangan: v, togri: s.togri, status: "✅ To‘g‘ri"});
-        } else {
-          javoblar.push({savol: s.savol, tanlangan: v, togri: s.togri, status: "❌ Xato"});
-        }
+        if (v === s.togri) ball++;
         Array.from(div.querySelectorAll("button")).forEach(b => b.disabled = true);
       };
       div.appendChild(btn);
@@ -36,10 +30,6 @@ function chiqar() {
 }
 
 document.getElementById("finishBtn").onclick = () => {
-  const natijaDiv = document.getElementById("natija");
-  natijaDiv.style.display = "block";
-  let foiz = Math.round((ball / savollar.length) * 100);
-  natijaDiv.innerHTML = `
-    <p>Test tugadi! To‘g‘ri javoblar: ${ball} / ${savollar.length} (${foiz}%)</p>
-  `;
+  document.getElementById("natija").innerText =
+    `Test tugadi! To‘g‘ri javoblar: ${ball} / ${savollar.length}`;
 };
