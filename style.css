@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  padding: 40px;
+}
+h1 { text-align: center; }
+.savol {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.savol p { font-weight: bold; }
+button {
+  margin: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #fcb69f;
+  cursor: pointer;
+}
+button:disabled { background: #ddd; }
+#finishBtn {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: #ff7f50;
+  color: #fff;
+  border-radius: 8px;
+}
+#natija {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+#timer {
+  text-align: center;
+  font-size: 22px;
+  margin: 15px;
+  color: red;
+}
